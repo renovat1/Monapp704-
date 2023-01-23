@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>superacteurs</title>
+
+    <!link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script>
+        var header = document.querySelector('header');
+            var section = document.querySelector('section');
+
+            var requestURL = 'https://github.com/renovat1/TP_rt704/blob/master/videotheque.json';
+
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+
+            request.responseType = 'json';
+            request.send();
+
+
+            request.onload = function() {
+                var superRealisateur = request.response;
+                videothequeHeader(superRealisateur);
+                showHFilms(superRealisateur);
+            }
+            request.onload = function() {
+                var superacteurs = request.response;
+                videothequeHeader(superacteurs);
+                showHFilms(superacteurs);
+            }
+            
+
+            function videotheHeader(jsonObj) {
+                var myH1 = document.createElement('h1');
+                var myH2 = document.createElement('h2');
+                myH1.textContent = jsonObj['proprietaire']['nom'];
+               // myH2.textContent = jsonObj['proprietaire']['prenom'];
+                header.appendChild(myH1);
+                header.appendChild(myH2);
+            
+                var myPara = document.createElement('p');
+                myPara.textContent = 'dern\u00e8re_modif: ' + jsonObj['dern\u00e8re_modif'];
+                header.appendChild(myPara);
+            }
+
+            
+            function showHFilms(jsonObj) {
+                var videotheque = jsonObj['films'];
+            
+                for (var i = 0; i < videotheque.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH3 = document.createElement('h3');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                /*var myPara3 = document.createElement('p');*/
+                var myList = document.createElement('ul');
+             /* creation de balise:
+            H2:titre
+            p:titre,annee,acteurs:
+            creation balise  de list <ul>de acteurs */
+
+
+
+                /* insertion des donner dans les balise cree ci-haut*/
+                
+            /*creation des ligne de la liste <li> de acteurs*/
+                myH3.textContent = videotheque[i].titre;
+                /*myPara1.textContent = 'Secret identity: ' + videotheque[i].secretIdentity;*/
+                myPara1.textContent = 'r\u00e9alisateur:';
+                myPara2.textContent = 'ann\u00e9e: ' + videotheque[i].ann\u00e9e;
+                myPara3.textContent = 'proprietaire:';
+            
+               
+                myPara3.textContent = 'acteurs:';
+
+            /* insertion des donner dans les balise cree ci-haut*/
+                
+            /*creation des ligne de la liste <li> de powers*/
+                var superacteurs = videotheque[i].acteurs;
+                for (var j = 0; j < superacteurs.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = superacteurs[j];
+                    myList.appendChild(listItem);
+                }
+            
+                myArticle.appendChild(myH3)['nom'];
+              //  myArticle.appendChild(myH3)['pr\u00e9nom'];
+                myArticle.appendChild(myPara1)['nom'];
+               //   myArticle.appendChild(myPara1)['pr\u00e9nom'];
+                myArticle.appendChild(myPara2)['nom'];
+                //  myArticle.appendChild(myPara2)['pr\u00e9nom'];
+
+                myArticle.appendChild(myH4)['nom'];
+                 // myArticle.appendChild(myH4)['pr\u00e9nom'];
+                myArticle.appendChild(myPara5)['nom'];
+                //  myArticle.appendChild(myPara5)['pr\u00e9nom'];
+                myArticle.appendChild(myPara6)['nom'];
+                 // myArticle.appendChild(myPara6)['pr\u00e9nom'];
+                myArticle.appendChild(myH7)['nom'];
+                 // myArticle.appendChild(myH7)['prenom'];
+                myArticle.appendChild(myPara8)['nom'];
+                 // myArticle.appendChild(myPara8)['pr\u00e9nom'];
+                myArticle.appendChild(myPara9)['nom'];
+                //  myArticle.appendChild(myPara9)['pr\u00e9nom'];
+               /* myArticle.appendChild(myPara3);*/
+                myArticle.appendChild(myList);
+            
+                section.appendChild(myArticle);
+                }
+            }
+  
+        </script>
+  </body>
+</html>

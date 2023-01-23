@@ -1,0 +1,139 @@
+{
+"proprietaire" : "Doejohn ",                    
+"dernere_modif" : "08/06/2022",
+"active" : true,
+"films": [
+    {
+        "titre": "Pulp fiction",
+        "annee": 1994,
+        "realisateur":"Tanrantino Quentin",
+
+       "acteurs" :[
+            
+            "Travolta John",
+               
+            "Thurman Uma",
+                
+             "Jackson Samuel L."
+         ]
+    },
+    {
+        "titre": "Impitoyable",
+        "année": 1992,
+        "realisateur":"Eastwood Clint",
+   
+        "acteurs": [
+            "Eastwood Clint",
+            
+            "Ackman Gene",
+             
+            "Freeman Morgan"
+
+        ]
+    },
+    {
+        "titre": "Tigre et dragon",
+        "annee": 2000,
+        "realisateur": "Lee Ang",
+       
+        "acteurs": [
+          
+                 "Yun-Fat Chow",
+              
+                "Yeoh Michelle",
+             
+                "Ziyi Zhang"
+        ]
+    },
+    {
+        "titre": "Le Secret des poignards volants",
+        "année": 2004,
+        "réalisateur":"Yimou Zhang",
+        
+        "acteurs": [
+               "Kaneshiro Takeshi",
+
+               "Lau Andy",
+         
+             "Ziyi Zhang"
+        ]
+    },
+    {
+        "titre": "Forrest Gump",
+        "année": 1994,
+        "réalisateur":"Zemeckis Robert",
+          
+        "acteurs": [
+           
+             "Hanks Tom",
+         
+            "Wright Robin",
+            "Sinise Gary"
+        ]
+    },
+    {
+        "titre": "Lawrence d'Arabie",
+        "année": 1962,
+        "réalisateur":"Lean David",
+   
+        "acteurs": [
+          
+             "O'Toole Peter",
+             "Sharif Omar",
+            "Guinness Alec"
+         ]
+    },
+    {
+        "titre": "Le pacha",
+        "année": 1968,
+        "réalisateur":"Lautner Georges",
+        
+        "acteurs": [
+          
+            "Gabin Jean",
+             "Carrel Dany",
+            "Pousse Andre"
+        ]
+    },
+    {
+        "titre": "Le Bon, la Brute et le Truand",
+        "année": 1966,
+        "réalisateur": "Leone Sergio",
+        
+        "acteurs": [
+            
+            "Eastwood Clint",
+             "Wallach Eli",
+             "Van Cleef Lee"
+         
+        ]
+    },
+    {
+        "titre": "Les tontons flingueurs",
+        "année": 1963,
+        "réalisateur":"Lautner Georges",
+        
+        "acteurs": [
+            
+             "Ventura Lino",
+              
+             "Blier Bernard",
+             
+             "Blanche Francis"
+             
+        ]
+    },
+    {
+        "titre": "Les Blues Brothers",
+        "année": 1980,
+        "réalisateur": "Landis John",
+      
+        "acteurs": [
+            "John Belushi",
+            "Akroyd Dan",
+            "Brown James"
+               
+        ]
+    }
+]
+}
